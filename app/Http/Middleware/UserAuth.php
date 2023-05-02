@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
-class RedirectIfAuthenticated
+class UserAuth
 {
     /**
      * Handle an incoming request.
@@ -17,9 +17,9 @@ class RedirectIfAuthenticated
     public function handle(Request $request, Closure $next): Response
     {
         if (Auth::check()) {
-            return redirect()->route('todo.index');
+            return $next($request);
         }
 
-        return $next($request);
+        return redirect('login');
     }
 }

@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, serif;
+}
+
+a {
+    text-decoration: none;
+    color: #151515;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    border: 1px gray solid;
+    background: white;
+}
+
+.header {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-logout a{
+    border: 1px gray solid;
+    padding: 5px 10px 5px 10px;
+}
+
+/*--------------tasks.blade.php--------------*/
+
+.back-to-home{
+    padding: 5px;
+    font-size: 16px;
+}
+
+.new_task button a{
+    padding: 5px;
+    font-size: 16px;
+}
+
+.sort-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:1rem;
+}
+
+.sort-wrap-title {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3a3939;
+    border-radius: 5px;
+    margin-top: 1rem;
+    width: 30%;
+}
+
+.sort_created_date, .sort_update_date{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    padding: 0px 20px 10px;
+    margin-top: 10px
+}
+
+.tasks-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.tasks-idle {
+    font-size: 17px;
+    color: #a1a1a1;
+}
+
+.tasks-wrap h3 {
+    margin-bottom: 1.5rem;
+}
+
+.task {
+    border: 1px solid #737373;
+    border-radius: 5px;
+    width: 20%;
+    margin-bottom: 1rem;
+    padding: 10px 20px;
+}
+
+.task-title {
+    font-size: 18px;
+}
+
+.task-status {
+    margin-top: 0.3rem;
+}
+
+.task-status-done {
+    color: green;
+    font-weight: 600;
+}
+
+.task-status-idle {
+    color: orange;
+    font-weight: 600;
+}
+
+.task-dates {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.task-buttons button a{
+    font-size: 15px;
+}
+
+.task-buttons-delete a{
+    color: red;
+}
+
+/*--------------create.blade.php / edit.blade.php--------------*/
+
+.task-create_edit-title {
+    font-size: 25px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.alert-error {
+    color: red;
+    text-align: center;
+    width: 15%;
+    font-weight: 600;
+}
+
+.task-create_edit-form-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.create_edit {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    width: 13%;
+}
+
+.task-create_edit-form-title, .task-create_edit-form-description, .task-create_edit-form-status {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    margin-top: 0.5rem;
+}
+
+.task-create_edit-submit {
+    margin-top: 1rem;
+    font-size: 18px;
+    border: 1px gray solid;
+    padding: 5px 10px 5px 10px;
+}
+
+
+/*--------------task.blade.php--------------*/
+
+.current-task-wrap {
+}
+
+.current-task-wrap-title {
+    font-size: 25px;
+    margin-top: 1rem;
+}
+
+.current-task-wrap-status {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.current-task-wrap-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.current-task-wrap-description-text {
+    width: 40%;
+}
+
+.current-task-wrap-description-subtitle {
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+    font-size: 18px;
+}
